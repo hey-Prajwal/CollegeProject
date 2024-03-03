@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Images/lightbluePlane.png" type="image/x-icon">
+    <title>TravelX Agency</title>
+  </head>
+  <body>
+    <div class="web">
+      <!-- -------------- login page --------------- -->
+      <div class="container login-container">
+        <div class="login-page">
+          <div class="login-close">
+            <i class="ri-close-line"></i>
+          </div>
+          <h1>Login</h1>
+          <div class="input">
+            <label for=""><input type="email" placeholder="Email" autofocus /></label>
+            <label for=""
+              ><input type="password" placeholder="Password"
+            /></label>
+            <br />
+            <span><a href="#">forget password?</a></span>
+            <br /><br />
+            <button type="submit">Login</button>
+          </div>
+          <h5>
+            Don't have an account?<span><a href="#">Sign Up</a></span>
+          </h5>
+        </div>
+      </div>
+
+      <!-- -------------- Sign Up page --------------- -->
+
+      <div class="container signup-container">
+        <div class="login-page">
+          <div class="sign-close">
+            <i class="ri-close-line"></i>
+          </div>
+          <h1>Sign Up</h1>
+          <div class="input">
+            <label for="firstname"
+              ><input type="text" placeholder="FirstName"
+            /></label>
+            <label for="firstname"
+              ><input type="text" placeholder="LastName"
+            /></label>
+            <label for=""><input type="email" placeholder="Email" /></label>
+            <label for=""
+              ><input type="password" placeholder="Password"
+            /></label>
+            <br /><br />
+            <button type="submit">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------- login & Sign up page end --------------- -->
+
+      <!-- -------------- Navbar --------------- -->
+
+      <div class="section1">
+        <div class="nav">
+          <h1 class="logo">TravelX.</h1>
+          <div class="right-btn">
+            <div class="navbar-btn">
+              <button class="nav-btn" id="login-btn">
+                Log In<i class="ri-arrow-right-up-line arrow"></i>
+              </button>
+              <button class="nav-btn" id="signup-btn">
+                Sign Up<i class="ri-arrow-right-up-line arrow"></i>
+              </button>
+            </div>
+            <div class="toggle"></div>
+          </div>
+        </div>
+        <!-- -------------- Hamburger Menu --------------- -->
+
+        <div class="menu-item">
+          <div class="navbar-btn">
+           
+           
+          </div>
+          <nav class="list">
+            <ul>
+               <button class="nav-btn2  menu-link" id="login-btn">
+                Log In<i class="ri-arrow-right-up-line"></i>
+              </button><button class="nav-btn2 menu-link" id="signup-btn">
+                Sign Up<i class="ri-arrow-right-up-line"></i>
+              </button>
+              <li><a href="index.html" class="menu-link">HOME</a></li>
+              <li><a href="#sec-3" class="menu-link">DESTINATIONS</a></li>
+              <li><a href="#sec-4" class="menu-link">SERVICES</a></li>
+              <li><a href="#sec-6" class="menu-link">ABOUT US</a></li>
+              <li><a href="#sec-7" class="menu-link">CONTACT US</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- -------------- video Background --------------- -->
+
+        <div class="hero-background">
+          <video
+            src="Images/iland-background.mp4"
+            class="video-background"
+            autoplay
+            muted
+            loop 
+          ></video>
+          <!-- <img
+            src="https://images.unsplash.com/photo-1698645524233-79aeb85cb14b?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          /> -->
+          <div class="main-text">
+            <h1>
+              The Best Way To Plan <br />
+              Your Next <span>Adventure.</span>
+            </h1>
+            <button class="main-btn">
+              Explore <i class="ri-arrow-right-line arrow"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------- section 1 end --------------- -->
+
+      <div class="section2">
+        <!-- <i class="ri-arrow-left-s-line arrow" id="left"></i> -->
+
+        <div class="frame">
+          <h1 class="section-heading">DESTINATIONS</h1>
+
+          <div class="slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="Images/tajmahal.jpg" loading="eager" alt="" />
+                  <h2>Tajmahal</h2>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/jaipur.jpg" loading="eager" alt="" />
+                  <h2>Jaipur</h2>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/rajasthan.jpg" loading="eager" alt="" />
+                  <h2>Rajasthan</h2>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/ladakh.jpg" loading="eager" alt="" />
+                  <h2>Ladakh</h2>
+                </div>
+                <div class="swiper-slide">
+                  <img src="Images/kerla.jpg" loading="eager" alt="" />
+                  <h2>Kerla</h2>
+                </div>
+                <div class="slide-btn">
+                  <div class="button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                  </div>
+                  <div class="button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <i class="ri-arrow-right-s-line arrow" id="right"></i> -->
+      </div>
+
+      <!-- -------------- Section 2 end --------------- -->
+
+      <div class="section3" id="sec-3">
+        <h1 class="section-heading">Tour Packages</h1>
+        <div class="package-images">
+          <div class="image">
+            <a href="Maldives.html"
+              ><img
+                src="Images/packages/Maldives/Aerial view of Taj Coral Reef Resort and Spa Maldives.jpg"
+                alt=""
+            /></a>
+            <h2>Maldives</h2>
+            <!-- <p>Enjoy Goa Beaches</p> -->
+          </div>
+          <div class="image">
+            <a href="Rajasthan2.html"
+              ><img src="Images/rajasthan.jpg" alt=""
+            /></a>
+            <h2>Rajasthan</h2>
+          </div>
+          <div class="image">
+            <a href="kerla2.html"
+              ><img src="Images/packages/kerla/kerla.cms" alt=""
+            /></a>
+            <h2>Kerla</h2>
+          </div>
+          <div class="image">
+            <a href="Himachal.html"
+              ><img src="Images/packages/himachal/03-kasol.jpg" alt=""
+            /></a>
+            <h2>Himachal Pradesh</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------- Section 3 end --------------- -->
+
+      <div class="section4" id="sec-4">
+        <div class="services">
+          <h1 class="section-heading">Services</h1>
+          <div class="service-name">
+            <div class="service">
+              <i class="ri-team-line"></i>
+              <h3>Special Activities</h3>
+            </div>
+            <div class="service">
+              <i class="ri-plane-line"></i>
+              <h3>Travel Arrangements</h3>
+            </div>
+            <div class="service">
+              <i class="ri-user-3-line"></i>
+              <h3>Private Guide</h3>
+            </div>
+            <div class="service">
+              <i class="ri-map-pin-2-line"></i>
+              <h3>Location Manager</h3>
+            </div>
+            <div class="service">
+              <i class="ri-service-line"></i>
+              <h3>Professional Service</h3>
+            </div>
+            <div class="service">
+              <i class="ri-customer-service-2-line"></i>
+              <h3>Great 24x7 Support</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------- Section 4 end --------------- -->
+
+      <div class="section5">
+        <h1 class="section-heading">Feedback</h1>
+
+        <div class="reviews">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <h3>Ganvir Tupte</h3>
+                  <p>
+                    "I recently booked a trip through TravelX and I couldn't be
+                    happier with the service I received. The agent was extremely
+                    helpful in finding the perfect itinerary for my budget and
+                    preferences. Everything from flights to accommodations was
+                    seamless. I highly recommend TravelX to anyone looking for a
+                    stress-free travel experience!"
+                  </p>
+                  <span class="star">⭐⭐⭐⭐</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <h3>Bhushan Meshram</h3>
+                  <p>
+                    "Overall, my experience with TravelX was positive. The
+                    booking process was easy and the prices were competitive.
+                    However, there were a few hiccups with the hotel
+                    reservation, which caused some inconvenience. Nevertheless,
+                    the customer service team was responsive and managed to
+                    resolve the issue promptly. I would consider using TravelX
+                    again in the future."
+                  </p>
+                  <span class="star">⭐⭐⭐</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <h3>Saurabh Mohbe</h3>
+                  <p>
+                    "TravelX made planning my vacation a breeze! The agent I
+                    worked with was knowledgeable and attentive to my needs.
+                    They provided great recommendations for activities and
+                    dining options at my destination. Thanks to TravelX, I had
+                    an amazing trip and will definitely use their services again
+                    in the future."
+                  </p>
+                  <span class="star">⭐⭐⭐⭐</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback">
+                  <h3>Manish Kumar</h3>
+                  <p>
+                    "I've been booking my travels through TravelX for years, and
+                    they never disappoint. The team goes above and beyond to
+                    ensure that every aspect of my trip is taken care of. From
+                    flights to tours, they handle it all with professionalism
+                    and expertise. I wouldn't trust anyone else with my travel
+                    plans!"
+                  </p>
+                  <span class="star">⭐⭐⭐⭐⭐</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------- Section 6 start About us --------------- -->
+
+      <div class="section6" id="sec-6">
+        <h1 class="section-heading">About Us</h1>
+
+        <div class="aboutUs">
+          <p>
+            Welcome to <strong>TravelX</strong>, where unforgettable journeys
+            begin. Founded on a passion for exploration and a commitment to
+            exceptional service, we strive to turn your travel dreams into
+            extraordinary experiences.
+          </p>
+          <h2>Our Mission</h2>
+          <p>
+            Our mission at Your Travel Agency Name is to inspire and empower
+            travelers to explore the world with confidence, curiosity, and
+            respect. We are committed to delivering personalized service,
+            unparalleled expertise, and innovative solutions that exceed our
+            clients' expectations and enrich their travel experiences.
+          </p>
+          <h2>Why Choose Us</h2>
+          <ul>
+            <li>
+              <strong>Expertise:</strong> Our team consists of seasoned travel
+              professionals...
+            </li>
+            <li>
+              <strong>Personalized Service:</strong> We believe that no two
+              travelers are alike...
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- -------------- Section 7 start Contact us --------------- -->
+
+      <div class="section7" id="sec-7">
+      <h1 class="section-heading">Contact Us</h1>
+
+      <div class="contactUs">
+        <div class="contact-info">
+          <h3><i class="ri-map-pin-2-fill"></i> Nagpur</h3>
+          <h3><i class="ri-phone-fill"></i> +91 1234567890</h3>
+          <h3><i class="ri-mail-fill"></i> contact@travelxagency.com</h3>
+         </div>
+  
+  
+          <div class="contact">
+            <input type="email" name="" id="" placeholder="email">
+            <input type="text" placeholder="Number">
+            <textarea name="" id="" cols="30" rows="4" placeholder="type something here...."></textarea>
+            <button class="contact-btn">Send</button>
+          </div>
+      </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-content">
+          <div class="icon-link">
+            <i class="ri-mail-line"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-facebook-box-line"></i>
+            <i class="ri-twitter-x-line"></i>
+          </div>
+          <div class="footer-link">
+            <a href="#">Home</a>
+            <a href="#sec-3">Destination</a>
+            <a href="#sec-4">Services</a>
+            <a href="#sec-6">About Us</a>
+            <a href="#sec-7">Contact</a>
+          </div>
+          <h4 class="footer-text">
+            <i class="ri-copyright-line"></i>Copyright 2024; Developed by :
+            Ganvir & Prajwal
+          </h4>
+        </div>
+      </div>
+    </div>
+    <!-- -------------- Footer end --------------- -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>

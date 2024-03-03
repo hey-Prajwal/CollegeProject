@@ -1,0 +1,350 @@
+.destination-head {
+  font-family: "Great Vibes", cursive;
+letter-spacing: 4px;
+font-size: 2.5rem;
+  margin-top: 50px;
+    padding: 30px;
+  }
+
+
+  
+
+  .goa-main {
+    text-align: center;
+  }
+
+  .goa-main h3{
+    color: #6c757d;
+  }
+
+  .packContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: start;
+
+    /* line-height: 35px; */
+  }
+
+  .packageInclude{
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0 50px;
+
+  }
+  .packageInclude i{
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .packages {
+   
+    border-radius: 20px;
+   
+  }
+
+  .packages img {
+    border-radius: 20px;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .dest-info {
+    padding: 0 20px;
+    font-size: 1vw;
+  }
+
+  .price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .icons-box{ 
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  }
+
+  .pack-icon{ 
+   height: 50px;
+   width: 100%;        
+  }
+  
+  .pack-icon i{
+    font-size: 20px;
+  }
+
+  .btn button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00af54;
+    color: #fff;
+  }
+
+  .package-info {
+    visibility: hidden;
+    position: fixed;
+    max-height: 85vh;
+    width: 100%;
+    top: 10%;
+    left: 0;
+    padding: 0 150px;
+    overflow-y:scroll;
+    scrollbar-width:none;
+  }
+
+  .package-image {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  }
+
+  .package-image img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .package-detail {
+    position: relative;
+    padding: 50px;
+    font-size: 1vw;
+    background-color: #e6ccb2;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .package-detail button {
+    color: black;
+  }
+
+  .btn {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .pack-close {
+    position: absolute;
+    top: 1%;
+    right: 1.5%;
+    font-size: 40px;
+  }
+
+  .activity {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+
+  }
+
+  .Itinerary {
+    border-left: 1.8px solid rgb(0, 0, 0);
+    padding-left: 15px;
+  }
+
+  .pack-form {
+    padding:  50px;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+  }
+
+  .pack-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pack-form label{
+    font-size: 20px;
+  }
+  .pack-form form input {
+    border-radius: 20px;
+    margin-left:  10px;
+    padding: 0 10px;
+    
+  }
+
+  .book-btn button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00af54;
+    color: #fff;
+    margin: auto;
+  }
+ 
+
+
+  /* Mobile View */
+  @media screen and (min-width: 250px) and (max-width: 480px) {
+    .nav {
+      background-color: #fff;
+      height: 50px;
+    }
+
+    .destination-head {
+      padding-top: 50px;
+      padding-bottom: 10px;
+    }
+
+    .packageInclude{
+      display: grid;
+      grid-auto-flow: row;
+      padding: 0 50px;
+      font-size: 3vw;
+    }
+    .packContainer {
+      padding: 15px;
+      grid-template-columns: 1fr;
+      /* line-height: 25px; */
+    }
+
+    .dest-info {
+      padding: 0 20px;
+      font-size: 2.6vw;
+    }
+
+    .dest-info h4 {
+      margin: 0;
+    }
+
+    .price-info button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .package-info {
+      margin-top: 50px;
+      padding: 15px;
+    }
+
+    .pack-close {
+      position: absolute;
+      top: 0.5%;
+      right: 1.5%;
+      font-size: 35px;
+      padding: 2px;
+    }
+
+    .package-detail {
+      padding: 15px;
+    }
+
+    .package-image {
+      padding: 20px 0;
+    grid-template-columns: repeat(1,1fr);
+
+    }
+  
+    .package-image img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .activity {
+      flex-direction: column;
+      align-items: start;
+      gap: 10px;
+      font-size: 2vw;
+    }
+
+    .Itinerary {
+      align-items: start;
+    }
+
+    .pack-form {
+      align-items: center;
+      padding: 20px;
+      background-color: black;
+      color: #fff;
+      border-radius: 20px;
+    }
+
+    .pack-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .pack-form label{
+    font-size: 10px;
+  }
+    .pack-form form input {
+      border-radius: 20px;
+      margin-left: 10px;
+      padding: 0 10px;
+    }
+  }
+
+  /* Tablet View */
+  @media screen and (min-width: 481px) and (max-width: 770px) {
+    .packContainer {
+      padding: 30px;
+      /* line-height: 20px; */
+    }
+
+    .package-info {
+      margin-top: 60px;
+      padding: 15px;
+    }
+
+    .package-detail {
+      padding: 35px;
+    }
+
+    .package-image {
+      padding: 30px 0;
+    grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .activity {
+      align-items: start;
+      gap: 10px;
+      font-size: 2vw;
+    }
+
+    .pack-form {
+      align-items: center;
+      padding: 20px;
+      background-color: black;
+      color: #fff;
+      border-radius: 20px;
+    }
+
+    .pack-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .pack-form form input {
+      border-radius: 20px;
+      margin-left: 10px;
+      padding: 0 20px;
+    }
+
+    .pack-form label{
+    font-size: 15px;
+  }
+  }
+
+  /* Laptop View */
+  @media screen and (max-width: 1024px) {
+    .package-info {
+      margin-top: 60px;
+      padding: 15px;
+    }
+  }
