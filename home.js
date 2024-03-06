@@ -1,26 +1,36 @@
 
 const login = document.getElementById("login-btn");
 const loginPage = document.querySelector(".login-container");
-const loginClose = document.querySelector(".login-close");
 const signup = document.getElementById("signup-btn");
 const signPage = document.querySelector(".signup-container");
-const signClose = document.querySelector(".sign-close");
+const closeButton = document.querySelectorAll(".close-btn");
 
 login.addEventListener("click", () => {
+  if (signPage.classList.contains("visible")) {
+    signPage.classList.remove("visible");
+  }
   loginPage.classList.add("visible");
 });
 
-loginClose.addEventListener("click", () => {
-  loginPage.classList.remove("visible");
-});
-
 signup.addEventListener("click", () => {
+  if (loginPage.classList.contains("visible")) {
+    loginPage.classList.remove("visible");
+  }
   signPage.classList.add("visible");
 });
 
-signClose.addEventListener("click", () => {
-  signPage.classList.remove("visible");
+closeButton.forEach(button => {
+  button.addEventListener("click", () => {
+    if (button.classList.contains("login-close")) {
+      loginPage.classList.remove("visible");
+    } else if (button.classList.contains("sign-close")) {
+      signPage.classList.remove("visible");
+    }
+  });
 });
+
+
+
 
 
 
@@ -37,10 +47,15 @@ signClose.addEventListener("click", () => {
 
 const toggle = document.querySelector(".toggle");
 const menu = document.querySelector(".menu-item");
+const navBtn = document.querySelectorAll(".nav-btn");
 
 toggle.onclick = function(){
   toggle.classList.toggle('active');
   menu.classList.toggle('active');
+
+  if(menu.classList.toggle === "active"){
+         navBtn.style.display = "block";
+  }
 }
 
 

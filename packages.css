@@ -258,7 +258,7 @@ font-size: 2.5rem;
       flex-direction: column;
       align-items: start;
       gap: 10px;
-      font-size: 2vw;
+      font-size: 3vw;
     }
 
     .Itinerary {
@@ -311,9 +311,10 @@ font-size: 2.5rem;
     }
 
     .activity {
+      flex-direction: column;
       align-items: start;
       gap: 10px;
-      font-size: 2vw;
+      font-size: 2.2vw;
     }
 
     .pack-form {

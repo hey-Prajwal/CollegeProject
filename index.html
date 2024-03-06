@@ -18,22 +18,25 @@
   <body>
     <div class="web">
       <!-- -------------- login page --------------- -->
+      <div class="LoginSignUp">
       <div class="container login-container">
         <div class="login-page">
-          <div class="login-close">
+          <div class="close-btn login-close">
             <i class="ri-close-line"></i>
           </div>
+          
+          <form action="">
           <h1>Login</h1>
           <div class="input">
-            <label for=""><input type="email" placeholder="Email" autofocus /></label>
-            <label for=""
-              ><input type="password" placeholder="Password"
-            /></label>
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" aria-required="true" required/>
             <br />
-            <span><a href="#">forget password?</a></span>
+            <!-- <span><a href="#">forget password?</a></span> -->
             <br /><br />
             <button type="submit">Login</button>
-          </div>
+           </div>
+          </form>
+
           <h5>
             Don't have an account?<span><a href="#">Sign Up</a></span>
           </h5>
@@ -44,27 +47,31 @@
 
       <div class="container signup-container">
         <div class="login-page">
-          <div class="sign-close">
+          <div class="close-btn sign-close">
             <i class="ri-close-line"></i>
           </div>
+
+          <form action="">
           <h1>Sign Up</h1>
           <div class="input">
             <label for="firstname"
-              ><input type="text" placeholder="FirstName"
+              ><input type="text" placeholder="FirstName" required
             /></label>
             <label for="firstname"
-              ><input type="text" placeholder="LastName"
+              ><input type="text" placeholder="LastName" required
             /></label>
-            <label for=""><input type="email" placeholder="Email" /></label>
+            <label for=""><input type="email" placeholder="Email" required /></label>
             <label for=""
-              ><input type="password" placeholder="Password"
+              ><input type="password" placeholder="Password" required
             /></label>
             <br /><br />
             <button type="submit">Sign Up</button>
+          </form>
+
           </div>
         </div>
       </div>
-
+</div>
       <!-- -------------- login & Sign up page end --------------- -->
 
       <!-- -------------- Navbar --------------- -->
@@ -87,17 +94,8 @@
         <!-- -------------- Hamburger Menu --------------- -->
 
         <div class="menu-item">
-          <div class="navbar-btn">
-           
-           
-          </div>
           <nav class="list">
             <ul>
-               <button class="nav-btn2  menu-link" id="login-btn">
-                Log In<i class="ri-arrow-right-up-line"></i>
-              </button><button class="nav-btn2 menu-link" id="signup-btn">
-                Sign Up<i class="ri-arrow-right-up-line"></i>
-              </button>
               <li><a href="index.html" class="menu-link">HOME</a></li>
               <li><a href="#sec-3" class="menu-link">DESTINATIONS</a></li>
               <li><a href="#sec-4" class="menu-link">SERVICES</a></li>
