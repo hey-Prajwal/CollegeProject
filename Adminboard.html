@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Admin Dashboard</title>
+    <style>
+      /* Basic styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2667ff;
+        color: #fff;
+        margin: 5px 20px;
+        padding: 10px 50px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .user {
+        cursor: pointer;
+      }
+     
+
+      .logout i {
+        font-size: 20px;
+      }
+
+      .userLogout {
+        display: none;
+        position: absolute;
+        padding: 10px;
+        color: #333;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px 12px;
+      }
+
+      nav {
+        height: 100%;
+        /* position: fixed; */
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #f4f4f4;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      nav ul li {
+        /* display: inline; */
+        padding: 40px;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      nav ul li a:hover {
+        background-color: #ddd;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      main {
+        padding: 0 20px;
+        /* margin-left: 200px; */
+      }
+
+      section {
+        margin-bottom: 20px;
+        /* height: 200px; */
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+      }
+
+      table {
+        /* padding: 20px; */
+        text-align: center;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid #333232;
+        text-align: left;
+        padding: 8px;
+      }
+
+      /* You can add more specific styles for each section as needed */
+    </style>
+  </head>
+  <body>
+    <!-- <header>
+      <h1>Admin Dashboard</h1>
+      Add logout button if needed
+      <div class="logout">
+        <div class="user">
+          <i class="ri-user-3-line"></i>
+          <br />
+          <label for="username">Admin</label>
+        </div>
+        <div class="userLogout">
+          <i class="ri-logout-box-r-line"></i>
+          <br />
+          <label for="logout">Logout</label>
+        </div>
+      </div>
+    </header> -->
+
+    <header>
+      <h1>Admin Dashboard</h1>
+      <div class="logout">
+        <div
+          class="user"
+          onmouseover="showLogout()"
+          onmouseleave="hideLogout()"
+        >
+          <label for="username">Admin</label>
+          <!-- Add face icon for user -->
+          <i class="ri-user-3-line face-icon"></i>
+          <div class="userLogout" id="logoutButton">
+            <label for="logout">Logout</label>
+            <i class="ri-logout-box-r-line"></i>
+          </div>
+        </div>
+        <!-- Add logout button -->
+      </div>
+    </header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#bookings">Bookings</a></li>
+          <li><a href="#customers">Customers</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#reports">Reports</a></li>
+          <li><a href="#settings">Total Bookings</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section id="bookings">
+          <!-- Booking management section -->
+          <h1>Bookings</h1>
+          <table>
+            <tr>
+              <th>Booking ID</th>
+              <th>Name</th>
+              <th>Mobile No</th>
+              <th>Email ID</th>
+              <th>Package Name</th>
+              <th>Date</th>
+              <th>Amount</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>Bhushan</td>
+              <td>123456789</td>
+              <td>Bhushan@gmail.com</td>
+              <td>Himachal</td>
+              <td>10/2/24 - 15/3/23</td>
+              <td>&#x20B9;50000</td>
+            </tr>
+          </table>
+        </section>
+        <section id="customers">
+          <h1>Customer Details</h1>
+          <table>
+            <tr>
+              <th>Booking ID</th>
+              <th>Name</th>
+              <th>Mobile No</th>
+              <th>Email ID</th>
+              <th>Package History</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>Bhushan</td>
+              <td>123456789</td>
+              <td>Bhushan@gmail.com</td>
+              <td>Himachal</td>
+            </tr>
+          </table>
+          <!-- Customer management section -->
+        </section>
+        <section id="packages">
+          <h1>Package</h1>
+          <table>
+            <tr>
+              <th>Maldives</th>
+              <th>Price</th>
+              <th>No. of Bookings</th>
+            </tr>
+            <tr>
+              <td>Cinnamon Velifushi- Magnificent Maldives Vacation</td>
+              <td>&#8377;1,65,858</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Adaaran Vadoo Resort- Thrilling Maldives Vacay</td>
+              <td>&#8377;1,55,334</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Relaxing Getaway to Embudu Village Maldives</td>
+              <td>&#8377;57,860</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Medhufushi Maldives With Water Villa Stay</td>
+              <td>&#8377;1,05,814</td>
+              <td></td>
+            </tr>
+            <!-- Rajasthan Packages  -->
+            <tr>
+              <th>Rajasthan</th>
+              <th>Price</th>
+              <th>No. of Bookings</th>
+            </tr>
+
+            <tr>
+              <td>Experience Grandeur in Udaipur and Jodhpur (Taj Special)</td>
+              <td>&#8377;1,83,256</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Holiday to Agra & Jaipur - With Flights</td>
+              <td>&#8377;27,053</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Fun Trip to Jaisalmer- From Jodhpur</td>
+              <td>&#8377;40,777</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Best of Rajasthan</td>
+              <td>&#8377;43,156</td>
+              <td></td>
+            </tr>
+            <!-- Kerla Packages  -->
+
+            <tr>
+              <th>Kerla</th>
+              <th>Price</th>
+              <th>No. of Bookings</th>
+            </tr>
+            <tr>
+              <td>Glorious Kerala Flight Inclusive Deal</td>
+              <td>&#8377;54,379</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Family Holiday to Munnar & Alleppey</td>
+              <td>&#8377;37,381</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Fantastic Ooty & Wayanad Vacay</td>
+              <td>&#8377;29,485</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Taj Green Cove Resort and Spa Kovalam 2N - With Flights</td>
+              <td>&#8377;18,500</td>
+              <td></td>
+            </tr>
+            <!-- Himachal Packages  -->
+
+            <tr>
+              <th>Himachal Pradesh</th>
+              <th>Price</th>
+              <th>No. of Bookings</th>
+            </tr>
+
+            <tr>
+              <td>Marvellous Himachal Vacation</td>
+              <td>&#8377;63,623</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Splendid Shimla, Kullu & Manali - From Delhi</td>
+              <td>&#8377;42,263</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Picturesque Dharamshala & Dalhousie</td>
+              <td>&#8377;34,058</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Alluring Ladakh Getaway</td>
+              <td>&#8377;74,701</td>
+              <td></td>
+            </tr>
+          </table>
+          <!-- Tour package management section -->
+        </section>
+        <section id="reports">
+          <h1>Bookings</h1>
+
+          <!-- Reports and analytics section -->
+        </section>
+        <section id="settings">
+          <div class="box"><h1>Total Packages</h1></div>
+          <div class="box"><h1>Total Bookings</h1></div>
+          <div class="box"><h1>Total Packages</h1></div>
+          <div class="box"><h1>Total Packages</h1></div>
+          <!-- Settings section -->
+        </section>
+      </main>
+    </div>
+
+    <script>
+                                            // .................. Logout Button ..................
+   let logout = document.getElementById("logoutButton");
+      logout.addEventListener("click", () => {
+        let value = confirm("Are you sure you want to log out?");
+        if(value){
+          window.location.href = "index.html";
+        }
+       
+      });
+
+      function showLogout() {
+        var logoutButton = document.getElementById("logoutButton");
+        logoutButton.style.display = "block";
+      }
+
+      function hideLogout() {
+        var logoutButton = document.getElementById("logoutButton");
+        logoutButton.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
