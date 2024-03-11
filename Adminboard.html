@@ -7,29 +7,40 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="Images/lightbluePlane.png" type="image/x-icon">
+
     <title>Admin Dashboard</title>
     <style>
-      /* Basic styles */
-      body {
-        font-family: Arial, sans-serif;
+      *{
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
       }
 
+      .box{
+        padding: 5px 20px;
+      }
       header {
-        /* width: 100%; */
+        width: 100%;
+        position: sticky;
+        top: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #2667ff;
         color: #fff;
-        margin: 5px 20px;
-        padding: 10px 50px;
+        padding: 20px 50px;
         text-align: center;
         border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 30px 2px;
+
+        z-index: 1;
       }
       .user {
         cursor: pointer;
+       
       }
      
 
@@ -44,24 +55,31 @@
         color: #333;
         background-color: #fff;
         border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px 12px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 60px 10px;
       }
 
       nav {
-        height: 100%;
-        /* position: fixed; */
-      }
+      height: calc(100% - 80px); /* Adjusted for the header height */
+      position: fixed;
+      top: 90px; /* Adjusted for the header height */
+      width: 200px;
+      /* background-color: #727171; */
+      /* border-radius: 10px; */
+
+    }
       nav ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        background-color: #f4f4f4;
+        background-color: #fff;
         text-align: center;
-        border-radius: 20px;
+      border-radius: 10px;
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 30px 2px;
+
       }
 
       nav ul li {
-        /* display: inline; */
         padding: 40px;
       }
 
@@ -73,31 +91,39 @@
       }
 
       nav ul li a:hover {
-        background-color: #ddd;
+        color: #fff;
+        background-color: #2667ff;
+        border-radius: 5px;
       }
 
       .container {
-        display: flex;
-      }
+      display: flex;
+      padding: 5px;
+    }
 
-      main {
-        padding: 0 20px;
-        /* margin-left: 200px; */
-      }
+    main {
+      padding: 0 20px;
+      
+      margin-left: 220px; 
+    }
 
       section {
-        margin-bottom: 20px;
-        /* height: 200px; */
+       
+        /* top: 90px; */
+        margin-bottom: 10px;
+        padding: 120px 20px 20px;
         width: 100%;
         text-align: center;
-        align-items: center;
-        padding: 20px;
-        background-color: #f4f4f4;
+        /* align-items: center; */
+        /* background-color: #e5e5e5; */
         border-radius: 10px;
       }
 
+      section h1{
+        padding-bottom: 15px;
+      }
+
       table {
-        /* padding: 20px; */
         text-align: center;
         border-collapse: collapse;
       }
@@ -108,30 +134,29 @@
         text-align: left;
         padding: 8px;
       }
+      @media screen and (min-width: 250px) and (max-width: 480px){
+        nav{
+          position: sticky;
+          display: flex;
+          flex-direction: column;
+        }
+       .container{
+        flex-direction: column;
+       }
+      }
+      @media screen and (min-width: 481px) and (max-width: 770px){
 
-      /* You can add more specific styles for each section as needed */
+      }
+
     </style>
   </head>
   <body>
-    <!-- <header>
-      <h1>Admin Dashboard</h1>
-      Add logout button if needed
-      <div class="logout">
-        <div class="user">
-          <i class="ri-user-3-line"></i>
-          <br />
-          <label for="username">Admin</label>
-        </div>
-        <div class="userLogout">
-          <i class="ri-logout-box-r-line"></i>
-          <br />
-          <label for="logout">Logout</label>
-        </div>
-      </div>
-    </header> -->
+    <div class="box">
 
+    
+  
     <header>
-      <h1>Admin Dashboard</h1>
+      <h1 class="logo">Admin Dashboard</h1>
       <div class="logout">
         <div
           class="user"
@@ -159,11 +184,13 @@
           <li><a href="#settings">Total Bookings</a></li>
         </ul>
       </nav>
+
       <main>
         <section id="bookings">
           <!-- Booking management section -->
-          <h1>Bookings</h1>
+          <!-- <h1>Bookings</h1> -->
           <table>
+            <caption>Bookings</caption>
             <tr>
               <th>Booking ID</th>
               <th>Name</th>
@@ -333,7 +360,7 @@
         </section>
       </main>
     </div>
-
+  </div>
     <script>
                                             // .................. Logout Button ..................
    let logout = document.getElementById("logoutButton");
